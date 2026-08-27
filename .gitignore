@@ -1,0 +1,16 @@
+# OS / editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Runtime per-bot chat history (contains local channel conversation data)
+*_history.json
+
+# Node (unused by this project, common safeguard)
+node_modules/
