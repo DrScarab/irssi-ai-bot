@@ -15,7 +15,7 @@ never freezes while waiting for a response.
 - Per-channel, per-bot memory that is persisted to disk and reloaded on start.
 - Chat history is trimmed per bot using `max_history`.
 - Automatic retry with progress messages if an endpoint is slow.
-- `!mcpchat confreload` reloads the bot config without restarting Irssi.
+- `!aibotctrl confreload` reloads the bot config without restarting Irssi.
 - Optional per-bot tool calling (sent through when present in the config).
 
 ## Requirements
@@ -80,7 +80,7 @@ colon, semicolon, exclamation or question mark:
 To re-read the config file at runtime:
 
 ```
-!mcpchat confreload
+!aibotctrl confreload
 ```
 
 ## How it works

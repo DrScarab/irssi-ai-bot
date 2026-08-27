@@ -120,7 +120,7 @@ sub load_bots {
 sub handle_public {
     my ($server, $msg, $nick, $address, $target) = @_;
 
-    if ($msg =~ /^!mcpchat\s+(\S+)(?:\s+(.*))?$/i) {
+    if ($msg =~ /^!aibotctrl\s+(\S+)(?:\s+(.*))?$/i) {
         my $cmd = $1;
         my $_args = $2 // '';
 
@@ -518,4 +518,4 @@ Irssi::signal_add('message public', 'handle_public');
 
 Irssi::timeout_add(30000, \&periodic_reap, undef);
 
-Irssi::print("%G>>%n irssi_ai_bot v3.7 loaded - Multi-character support (!mcpchat confreload).");
+Irssi::print("%G>>%n irssi_ai_bot v3.7 loaded - Multi-character support (!aibotctrl confreload).");
